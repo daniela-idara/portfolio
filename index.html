@@ -162,7 +162,7 @@ body {font-family: "Lato", sans-serif}
    <textarea class="w3-input w3-border" cols="30" rows"15" type="message" placeholder="Message" name="message"></textarea>
          </div>
 
-        <button class="w3-button w3-black w3-section w3-right" onclick="submitFunction()" type="submit" value="Send">SEND</button>
+        <button class="w3-button w3-black w3-section w3-right" type="submit" value="Send" onclick="submit()">SEND</button>
         
           <!-- This is how to make a form input hidden -->
   <input type="hidden" name="*redirect" value="https://daniela-idara.github.io/portfolio/#contact">
@@ -173,6 +173,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
 <script>
+  
   // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
@@ -205,6 +206,11 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+function submit() {
+    alert("Thanks! I'll get back to you shortly.");
+}
 
   </script>
   
